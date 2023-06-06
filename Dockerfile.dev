@@ -1,0 +1,17 @@
+#
+FROM node:19-alpine
+#
+WORKDIR '/usr/app'
+
+COPY package.json .
+
+#
+# COPY . .
+
+#RUN rm -Rf node_modules
+
+RUN npm install
+
+
+
+CMD ["npm", "run", "start"]
