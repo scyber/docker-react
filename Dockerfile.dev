@@ -6,7 +6,7 @@ WORKDIR '/usr/app'
 COPY package.json .
 
 #
-# COPY . .
+COPY . .
 
 #RUN rm -Rf node_modules
 

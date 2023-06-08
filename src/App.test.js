@@ -7,13 +7,13 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders learn react link', () => {
+test('renders main link', () => {
   render(<App />);
   const linkElement = screen.getByText(/Vacha There!/i);
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders learn react link', () => {
+test('renders main link 2 time', () => {
   render(<App />);
   const linkElement = screen.getByText(/Vacha There!/i);
   expect(linkElement).toBeInTheDocument();
