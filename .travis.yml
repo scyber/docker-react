@@ -10,3 +10,21 @@ before_install:
 
 script: 
   - docker run -e CI=true scyber/docker-reaact npm exec test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-north-1"
+  app: "react-app"
+  env: "React-Docker"
+  bucket_name: "elasticbeanstalk-eu-north-1-431758635647"
+  bucket_path: "react-app"
+  on:
+    branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_key_id: "$AWS_SECRET_KEY"
+
+
+
+
+  
+  
